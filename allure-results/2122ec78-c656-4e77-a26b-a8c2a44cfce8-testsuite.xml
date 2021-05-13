@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1619570894388' stop='1619570896377'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1619570894389' status='broken' stop='1619570896375'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1619570894390' status='passed' stop='1619570895877'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8eb88ffd-f8dc-4509-9ac0-0546899a32ec-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1619570895878' status='broken' stop='1619570896375'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3c01b71b-cebe-42e8-a966-70f396f799da-attachment.json' type='application/json' size='53'/>
+                    </attachments>
+                    <steps>
+                        <step start='1619570896372' status='broken' stop='1619570896375'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid session id</message>
+                <stack-trace>invalid session id: invalid session id
+                    at Object.getErrorFromResponseBody (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/webdriver/build/utils.js:189:12)
+                    at WebDriverRequest._request (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/webdriver/build/request.js:168:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                    at async Browser.wrapCommandFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Browser.$ (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/webdriverio/build/commands/browser/$.js:68:17)
+                    at async Browser.wrapCommandFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async LoginPage.login (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/test/pageobjects/login.page.js:19:16)
+                    at async Context.&lt;anonymous> (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/test/specs/example.e2e.js:8:9)
+                    at async Context.executeAsync (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:136:16)
+                    at async Context.testFrameworkFnWrapper (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:52:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

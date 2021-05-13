@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1620919573930' stop='1620919583521'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1620919573931' status='broken' stop='1620919583514'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.93'/>
+            </parameters>
+            <steps>
+                <step start='1620919573933' status='passed' stop='1620919581312'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ce76e9b7-3840-4a93-9298-4844d3afd319-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620919581313' status='passed' stop='1620919581864'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7acf478e-9f19-43d3-8d17-7f8ed5f7b0b8-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='2772b002-07a8-495d-8267-9370b5622e6b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1620919581870' status='broken' stop='1620919583513'>
+                    <name>POST /session/:sessionId/element/ca73dc76-9196-4bfd-93a0-c51397cc853c/clear</name>
+                    <title>POST /session/:sessionId/element/ca73dc76-9196-4bfd-93a0-c51397cc853c/clear</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1620919583510' status='broken' stop='1620919583513'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid session id</message>
+                <stack-trace>invalid session id: invalid session id
+                    at Object.getErrorFromResponseBody (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/webdriver/build/utils.js:189:12)
+                    at WebDriverRequest._request (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/webdriver/build/request.js:168:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                    at async Element.wrapCommandFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Element.wrapCommandFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Element.elementErrorHandlerCallbackFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/webdriverio/build/middlewares.js:23:32)
+                    at async Element.wrapCommandFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Element.wrapCommandFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:78:29)
+                    at async Element.elementErrorHandlerCallbackFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/webdriverio/build/middlewares.js:23:32)
+                    at async Element.wrapCommandFn (/mnt/c/Users/Innocent Onyemaenu/Documents/automation/webdriverio/node_modules/@wdio/utils/build/shim.js:78:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
